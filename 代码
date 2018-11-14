@@ -1,1 +1,88 @@
+for i in range(100,999):
+    a=i%10
+    b=i//10%10
+    c=i//100
+    if i==a**3+b**3+c**3:
+        print(i)
+
+i=1
+while i<9999999999999:
+    if i % 1 == 0 and i % 2 == 1 and i % 3 == 0 and i % 4 == 1 and i % 5 == 4 and i % 6 == 3 and i % 7 == 0 and i % 8 == 1 and i % 9 == 0:
+        print(i)
+        break
+    else:
+        i=i+1
+
+i=666
+n=int(input(""))
+a=[]
+while i!=0:
+    b=i%n
+    a+=[b]
+    i=i//n
+print(a)
+a.reverse()
+for i in range(len(a)):
+    print(a[i],end="")
+
+a=input("请输入10个数字：")
+l=a.split(" ")
+for i in range(len(l) - 1):
+    for j in range(len(l) - 1 - i):
+        if int(l[j])> int(l[j + 1]):
+            l[j], l[j + 1] = l[j + 1], l[j]
+print(l)
+h=l.pop(8)
+print(h)
+
+import random
+a=random.randint(1,2)
+print(a)
+if a==1:
+    a="左"
+else:
+    a="右"
+b=random.randint(1,9)
+c=random.randint(1,6)
+print("请%s侧%d排%d列的同学回答老是的问题！"%(a,b,c))
+
+s=input("")
+s2=s[::-1]
+print(s2)
+if s==s2:
+    print("是回文字符串")
+else:
+    print("不是回文字符串")
+
+a=input("")
+l=a.split("/")
+b=int(l.pop(0))
+c=int(l.pop())
+if b==1:
+    d=c
+if b==2:
+    d=31+c
+if b==3:
+    d=59+c
+if b==4:
+    d=90+c
+if b==5:
+    d=120+c
+if b==6:
+    d=151+c
+if b==7:
+    d=181+c
+if b==8:
+    d=212+c
+if b==9:
+    d=243+c
+if b==10:
+    d=273+c
+if b==11:
+    d=304+c
+if b==12:
+    d=334+c
+print("这是2018年的第%d天"%(d))
+
+
 
