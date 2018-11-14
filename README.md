@@ -35,7 +35,20 @@ f=random.randint()  随机整数
                             Python赋值语句
       变量=值
                             python控制语句
-       
+       if语句             while语句                               for语句
+       if 条件 ：         while 条件：                             for i in ()
+       elif ...:          break（结束循环）                        后面依次赋值到前面
+       else:              continue（结束本次循环，进入下一次循环)
+ 函数：
+ def 函数名 （）：
+ return递归函数  例子见代码文件
+
+
+
+
+
+
+
 
 
 
